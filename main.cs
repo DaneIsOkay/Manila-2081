@@ -9,16 +9,22 @@ namespace Manila_2081
             //ASCII INTRO ART
             string line = "";
 
-            // Read the file and display it line by line.  
+            // Intro
             System.IO.StreamReader file =
-                new System.IO.StreamReader(@"text/intro_welcome.txt");
+                new System.IO.StreamReader(@"source/text/intro/welcome.txt");
             while ((line = file.ReadLine()) != null)
             {
                 System.Console.WriteLine(line);
             }
 
-            //Line Break Before Ending
-            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+						// Basic Lore
+						
+            file =
+                new System.IO.StreamReader(@"source/text/intro/lore_basic.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                System.Console.WriteLine(line);
+            }
         }
     }
 }
